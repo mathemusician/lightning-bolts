@@ -36,4 +36,5 @@ def create_fasterrcnn_backbone(
     else:
         # This does not create fpn backbone, it is supported for all models
         backbone, _ = create_torchvision_backbone(backbone, pretrained)
+        print('yeehaw')
     return backbone
